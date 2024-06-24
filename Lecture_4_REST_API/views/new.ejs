@@ -1,0 +1,21 @@
+<!-- new.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create new Post</title>
+</head>
+<body>
+    <h2>Enter Your data :</h2>
+    <form action="/posts" method="post">
+        <label for="username">Enter Your Username:</label>
+        <input type="text" name="username" placeholder="Mark Henry">
+        <br><br>
+        <label for="content">Enter Your Content:</label>
+        <textarea name="content" placeholder="Content will go here"></textarea>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

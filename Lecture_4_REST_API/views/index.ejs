@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Posts</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Here You See the Username and Their Post:</h1>
+    <div class="user-posts">
+        <% for (let post of posts) { %>
+            <div class="post">
+                <h4 class="username">@<%= post.username %></h4>
+                <p class="content">Content: <%= post.content %></p>
+            </div>
+        <% } %>    
+    </div>
+</body>
+</html>
